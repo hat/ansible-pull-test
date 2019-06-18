@@ -1,0 +1,6 @@
+---
+- hosts: all
+  tasks:
+    - name: Print a the OS package manager
+      debug:
+        msg: "{{ansible_pkg_mgr}}}"
